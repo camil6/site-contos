@@ -1,0 +1,1884 @@
+@charset "utf-8";
+/* ACRESCENTAR EM TODOS OS DOCUMENTOS CSSs */
+
+@-ms-viewport
+{
+    width: device-width;
+}
+
+footer, header, section, article, nav, aside, hgroup{
+    display: block;
+}
+
+ul,ol,a, li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+
+.clearfix{ /*limpa a herança de flutuação entre divs*/
+    clear: both; 
+}
+.esquerda{
+    float: left;
+}
+.direita{
+    float: right;
+}
+
+.texto_alinhado{
+    text-align: justify;
+}
+
+.autor{
+    margin-bottom: 0;
+}
+.titulo{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.big_titulo{
+    font-family: 'Special Elite', cursive;
+    font-size: 20px;
+    color: rgb(109, 88, 88);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: 100px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    color: white;
+    background: rgb(37, 37, 37) url(images/horror-skull-background-texture-free.jpg);
+    background-blend-mode: overlay;/* blend mode - mesclar camadas de cor atraves da iluminação - site para pesquisar https://designculture.com.br */
+    background-repeat: no-repeat;/*controlar a repetição da imagem de fundo*/
+    background-attachment: fixed; /*o conteudo rola sobre a imagem*/
+    background-position: center top; /* posicionamento da imagem */ 
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.lista_mobile{
+    background: rgb(19, 18, 18);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    border: rgb(155, 47, 47) thin solid;
+}
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* // Small devices (landscape phones, 320px and up) */
+@media (min-width: 320px){
+
+    /* ___________________T O P O_______________________*/
+    #principal{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #topo{
+        /* position: fixed; - deixar menu descer junto com a tela*/ 
+        width: 100%;
+        height: 100px;
+    }
+    #logo{
+        width: 185px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 12px;
+    }
+    #logo img{
+        width: 50px;
+        height: auto;
+        margin-top: 5px;
+    }
+    #logo p{
+        font-size: 20px;
+    }
+    #logo span{
+        color: rgb(155, 47, 47);
+        font-weight: bold;
+    }
+    .logotipo{
+        color: brown;
+    }
+    /* ___________________M E N U_______________________*/
+
+    #menu{
+        width: 100px; /* 576 - 176 = 400px */
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    #lista_menu{
+        display: none;
+        width: auto;
+        float: right;
+    }
+    #lista_menu li{
+        float: left;
+        margin-left: 0px;
+        font-size: 20px;
+        margin-right: 18px;
+    }
+    .link_menu{
+        color: white;
+        float: left;
+    }
+
+    .link_menu:hover{
+        text-decoration: underline;
+        color:rgb(187, 187, 187);
+    }
+
+    /* ADICIONAR O SELECT MENU MOBILE! pois o menu normal nao caberia */
+	#menu_mobile{
+		display: block;
+		width: 70px;
+		height: 50px;
+		border: rgb(155, 47, 47) thin solid;
+		border-radius: 5px;
+		background: rgba(5, 5, 5, 0.5);
+		color: white;
+        float: right;
+        font-size: 12px;
+	}
+    
+    /* ___________________B A R R A   L A T E R A L_______________________*/
+
+    #barra_lateral{
+    display: none;
+    width: 230px;
+    height: 380px;
+    margin: 40px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #barra_lateral h2{
+        margin-left: 22px;
+    }
+
+    .links_barra_lateral{
+        margin: 20px;
+        margin-bottom: 30px;
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .links_barra_lateral:hover{
+        text-shadow: 2px 2px 5px grey;
+    }
+
+
+    /* ___________________S U B R O D A P É_______________________*/
+    #subrodape2{
+        width: 100%;
+        background-color: rgb(39, 1, 1);
+        box-shadow: 5px 5px 5px rgb(24, 1, 1);
+    }
+
+    #subrodape{
+        width: 300px;
+        min-height: 400px;
+        padding: 10px;
+    }
+    .itens_subrodape{
+        width: 250px;
+        min-height: 80px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 10px;
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .itens_subrodape h3{
+        margin-bottom: 0;
+        margin-top: 5px;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+    .itens_subrodape hr{
+        border-color: rgb(187, 187, 187);
+    }
+    .links_contato{
+        color: rgb(187, 187, 187);
+    }
+    .links_contato:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ___________________R O D A P É_______________________*/
+    #rodape2{
+        width: 100%;
+        background-color: rgb(24, 1, 1);
+        box-shadow: 5px 5px 5px rgb(17, 1, 1);
+    }
+    #rodape{
+        width: 280px;
+        height: 30px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    #copy{
+        width: 100%;
+        height: 10px;
+    }
+    #desenvolvido{
+        width: 100%;
+        height: 10px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    /* ___________________I N D E X_______________________*/
+
+    #main_conteudos{
+        background-color: rgb(51, 9, 9);
+        min-height: 4320px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_conteudos h1{
+        margin-left: 20px;
+        font-size: 23px;
+    }
+
+    #conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7{
+        width: 260px;
+        min-height: 555px;
+        margin: 10px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #conteudo1 img, #conteudo2 img, #conteudo3 img, #conteudo4 img, #conteudo5 img, #conteudo6 img, #conteudo7 img{
+        width: 255px;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    #texto_index{
+        width: 260px;
+        min-height: 200px;
+        font-size: 13px;
+    }
+    #texto_index span{
+        font-weight: bold;
+    }
+    .btcontinuar_lendo{
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 0, 21);
+        text-align: center;
+        float: right;
+        color: black;
+        font-weight: bold;
+        line-height: 35px;
+        border-radius: 7px;
+        box-shadow: 4px 4px 4px rgb(85, 9, 9);
+        margin-bottom: 0px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .btcontinuar_lendo:hover{
+        text-shadow: 1px 1px 1px rgb(112, 14, 14);
+        color: rgb(39, 1, 1);
+    }
+
+
+    /* ___________________C O N T O S_______________________*/
+
+    #main_conteudo_contos{
+        background-color: rgb(51, 9, 9);
+        min-height: auto;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+
+    #imagem_lateral{
+        height: auto;
+        margin-left: 30px;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    #imagem_lateral img{
+        width: 260px;
+        height: auto;
+    }
+    .legenda_img{
+        color: grey;
+        font-size: 12px;
+        width: 260px;
+        margin: 0;
+    }
+
+    #conto{
+        width: 280px;
+        min-height: auto;
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #conto h1{
+    font-style: italic;
+    }
+
+    /* ___________________S O B R E   M I M_______________________*/
+
+    #main_sobre_mim{
+        background-color: rgb(51, 9, 9);
+        min-height: 1540px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_sobre_mim h1{
+        margin-left: 105px;
+        font-size: 23px;
+    }
+    #sobre_mim{
+        width: 280px;
+        min-height: 1410px;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #sobre_mim img{
+        width: 280px;
+        height: auto;
+    }
+    #sobre_mim p{
+        margin: 0;
+    }
+    #texto_sobre_mim{
+        width: 270px;
+        height: 640px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 17px;
+        text-align:justify;
+    }
+    .margem_img{
+        margin-bottom: 10px;
+    }
+
+
+}/* FIM 320px */
+
+
+
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px)
+{
+    /* ___________________T O P O_______________________*/
+    #principal{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #topo{
+        /* position: fixed; - deixar menu descer junto com a tela*/ 
+        width: 100%;
+        height: 100px;
+    }
+    #logo{
+        width: 300px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 12px;
+    }
+    #logo img{
+        width: 60px;
+        height: auto;
+        margin-top: auto;
+    }
+    #logo p{
+        font-size: 25px;
+    }
+    #logo span{
+        color: rgb(155, 47, 47);
+        font-weight: bold;
+    }
+    .logotipo{
+        color: brown;
+    }
+    /* ___________________M E N U_______________________*/
+
+    #menu{
+        width: 400px; /* 576 - 176 = 400px */
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    #lista_menu{
+        display: table;
+        width: auto;
+        float: right;
+    }
+    #lista_menu li{
+        float: left;
+        margin-left: 0px;
+        font-size: 20px;
+        margin-right: 18px;
+    }
+    .link_menu{
+        color: white;
+        float: left;
+    }
+
+    .link_menu:hover{
+        text-decoration: underline;
+        color:rgb(187, 187, 187);
+    }
+    /* ADICIONAR O SELECT MENU MOBILE! pois o menu normal nao caberia */
+	#menu_mobile{
+		display: none;
+		width: 270px;
+		height: 50px;
+		border: rgba(103, 103, 103,1.00) thin solid;
+		border-radius: 5px;
+		background: rgba(62, 49, 40, 0.5);
+		color: white;
+        float: right;
+	}
+    /* ___________________B A R R A   L A T E R A L_______________________*/
+
+    #barra_lateral{
+    display: none;
+    width: 230px;
+    height: 380px;
+    margin: 40px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #barra_lateral h2{
+        margin-left: 22px;
+    }
+
+    .links_barra_lateral{
+        margin: 20px;
+        margin-bottom: 30px;
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .links_barra_lateral:hover{
+        text-shadow: 2px 2px 5px grey;
+    }
+
+
+    /* ___________________S U B R O D A P É_______________________*/
+    #subrodape2{
+        width: 100%;
+        background-color: rgb(39, 1, 1);
+        box-shadow: 5px 5px 5px rgb(24, 1, 1);
+    }
+
+    #subrodape{
+        width: 556px;
+        min-height: 330px;
+        padding: 10px;
+    }
+    .itens_subrodape{
+        width: 526px;
+        min-height: 80px;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .itens_subrodape h3{
+        margin-bottom: 0;
+        margin-top: 0;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+    .itens_subrodape hr{
+        border-color: rgb(187, 187, 187);
+    }
+    .links_contato{
+        color: rgb(187, 187, 187);
+    }
+    .links_contato:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ___________________R O D A P É_______________________*/
+    #rodape2{
+        width: 100%;
+        background-color: rgb(24, 1, 1);
+        box-shadow: 5px 5px 5px rgb(17, 1, 1);
+    }
+    #rodape{
+        width: 536px;
+        height: 10px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    #copy{
+        width: 50%;
+        height: 10px;
+    }
+    #desenvolvido{
+        width: 50%;
+        height: 10px;
+        text-align: right;
+        margin-top: auto;
+    }
+
+    /* ___________________I N D E X_______________________*/
+
+    #main_conteudos{
+        background-color: rgb(51, 9, 9);
+        min-height: 2280px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_conteudos h1{
+        margin-left: 140px;
+        font-size: 25px;
+    }
+
+    #conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7{
+        width: 516px;
+        min-height: 260px;
+        margin: 10px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #conteudo1 img, #conteudo2 img, #conteudo3 img, #conteudo4 img, #conteudo5 img, #conteudo6 img, #conteudo7 img{
+        width: 125px;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #texto_index{
+        width: 380px;
+        min-height: 200px;
+        font-size: 15px;
+    }
+    #texto_index span{
+        font-weight: bold;
+    }
+    .btcontinuar_lendo{
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 0, 21);
+        text-align: center;
+        float: right;
+        color: black;
+        font-weight: bold;
+        line-height: 35px;
+        border-radius: 7px;
+        box-shadow: 4px 4px 4px rgb(85, 9, 9);
+        margin-bottom: 0px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .btcontinuar_lendo:hover{
+        text-shadow: 1px 1px 1px rgb(112, 14, 14);
+        color: rgb(39, 1, 1);
+    }
+
+
+    /* ___________________C O N T O S_______________________*/
+
+    #main_conteudo_contos{
+        background-color: rgb(51, 9, 9);
+        min-height: auto;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+
+    #imagem_lateral{
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 43px;
+        margin-bottom: auto;
+    }
+    #imagem_lateral img{
+        width: 200px;
+        height: auto;
+    }
+    .legenda_img{
+        color: grey;
+        font-size: 12px;
+        width: 200px;
+    }
+
+    #conto{
+        width: 536px;
+        min-height: 500px;
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #conto h1{
+    font-style: italic;
+    }
+
+
+    /* ___________________S O B R E   M I M_______________________*/
+
+    #main_sobre_mim{
+        background-color: rgb(51, 9, 9);
+        min-height: 730px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_sobre_mim h1{
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    #sobre_mim{
+        width: 536px;
+        min-height: 555px;
+        margin: 10px;
+        padding: 10px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #sobre_mim img{
+        width: 200px;
+        height: auto;
+    }
+    #sobre_mim p{
+        margin: 0;
+    }
+    #texto_sobre_mim{
+        width: 320px;
+        height: 550px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 17px;
+        text-align:justify;
+    }
+    .margem_img{
+        margin-bottom: 10px;
+    }
+
+}/* FIM 576px */
+
+
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px){
+
+    /* ___________________T O P O_______________________*/
+
+    #principal{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #topo{
+        width: 100%;
+        height: 100px;
+    }
+    #logo{
+        width: 300px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    #logo img{
+        width: auto;
+        height: auto;
+        margin-top: 8px;
+    }
+    #logo p{
+        font-size: 35px;
+    }
+    #logo span{
+        color: rgb(155, 47, 47);
+        font-weight: bold;
+    }
+    .logotipo{
+        color: brown;
+    }
+    /* ___________________M E N U_______________________*/
+
+    #menu{
+        width: 400px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    #lista_menu{
+        display: table;
+        width: auto;
+        float: right;
+    }
+    #lista_menu li{
+        float: left;
+        margin-left: 50px;
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .link_menu{
+        color: white;
+        float: left;
+    }
+
+    .link_menu:hover{
+        text-decoration: underline;
+        color:rgb(187, 187, 187);
+    }
+
+        /* ADICIONAR O SELECT MENU MOBILE! pois o menu normal nao caberia */
+	#menu_mobile{
+		display: none;
+		width: 270px;
+		height: 50px;
+		border: rgba(103, 103, 103,1.00) thin solid;
+		border-radius: 5px;
+		background: rgba(62, 49, 40, 0.5);
+		color: white;
+        float: right;
+	}
+    /* ___________________B A R R A   L A T E R A L_______________________*/
+
+    #barra_lateral{
+    display: none;
+    width: 230px;
+    height: 380px;
+    margin: 40px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #barra_lateral h2{
+        margin-left: 22px;
+    }
+
+    .links_barra_lateral{
+        margin: 20px;
+        margin-bottom: 30px;
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .links_barra_lateral:hover{
+        text-shadow: 2px 2px 5px grey;
+    }
+
+
+    /* ___________________S U B R O D A P É_______________________*/
+    #subrodape2{
+        width: 100%;
+        background-color: rgb(39, 1, 1);
+        box-shadow: 5px 5px 5px rgb(24, 1, 1);
+    }
+
+    #subrodape{
+        width: 748px;
+        min-height: 345px;
+        padding: 10px;
+    }
+    .itens_subrodape{
+        width: 698px;
+        min-height: 80px;
+        float: left;
+        margin-left: 20px;
+        margin-right: 30px;
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .itens_subrodape h3{
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .itens_subrodape hr{
+        border-color: rgb(187, 187, 187);
+    }
+    .links_contato{
+        color: rgb(187, 187, 187);
+    }
+    .links_contato:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ___________________R O D A P É_______________________*/
+    #rodape2{
+        width: 100%;
+        background-color: rgb(24, 1, 1);
+        box-shadow: 5px 5px 5px rgb(17, 1, 1);
+    }
+    #rodape{
+        width: 728px;
+        height: 10px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    #copy{
+        width: 50%;
+        height: 10px;
+    }
+    #desenvolvido{
+        width: 50%;
+        height: 10px;
+        text-align: right;
+        margin-top: auto;
+    }
+
+    /* ___________________I N D E X_______________________*/
+
+    #main_conteudos{
+        background-color: rgb(51, 9, 9);
+        min-height: 2335px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_conteudos h1{
+        margin-left: 60px;
+        font-size: 28px;
+    }
+
+    #conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7{
+        width: 648px;
+        min-height: 238px;
+        margin: 40px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #conteudo1 img, #conteudo2 img, #conteudo3 img, #conteudo4 img, #conteudo5 img, #conteudo6 img, #conteudo7 img{
+        width: 200px;
+        height: auto;
+        margin-top: auto;
+    }
+
+    #texto_index{
+        width: 433px;
+        min-height: 200px;
+        font-size: 15px;
+    }
+    #texto_index span{
+        font-weight: bold;
+    }
+    .btcontinuar_lendo{
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 0, 21);
+        text-align: center;
+        float: right;
+        color: black;
+        font-weight: bold;
+        line-height: 35px;
+        border-radius: 7px;
+        box-shadow: 4px 4px 4px rgb(85, 9, 9);
+        margin-bottom: 0px;
+        margin-top: 7px;
+        font-size: 16px;
+    }
+
+    .btcontinuar_lendo:hover{
+        text-shadow: 1px 1px 1px rgb(112, 14, 14);
+        color: rgb(39, 1, 1);
+    }
+
+
+    /* ___________________C O N T O S_______________________*/
+
+    #main_conteudo_contos{
+        background-color: rgb(51, 9, 9);
+        min-height: auto;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+
+    #imagem_lateral{
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        margin-bottom: auto;
+    }
+    #imagem_lateral img{
+        width: auto;
+        height: auto;
+    }
+    .legenda_img{
+        color: grey;
+        font-size: 12px;
+        width: auto;
+    }
+
+    #conto{
+        width: 728px;
+        min-height: 500px;
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #conto h1{
+    font-style: italic;
+    }
+
+
+    /* ___________________S O B R E   M I M_______________________*/
+
+    #main_sobre_mim{
+        background-color: rgb(51, 9, 9);
+        min-height: 870px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_sobre_mim h1{
+        margin-left: 40px;
+        font-size: 28px;
+    }
+    #sobre_mim{
+        width: 690px;
+        min-height: 700px;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #sobre_mim img{
+        width: auto;
+        height: auto;
+    }
+    #sobre_mim p{
+        margin: auto;
+    }
+    #texto_sobre_mim{
+        width: 400px;
+        height: 700px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 18px;
+        text-align:justify;
+    }
+    .margem_img{
+        margin-bottom: 20px;
+    }
+
+
+
+}/* FIM 768px */
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* // Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    /* ___________________T O P O_______________________*/
+
+    #principal{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #topo{
+        width: 100%;
+        height: 100px;
+    }
+    #logo{
+        width: 300px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    #logo img{
+        width: auto;
+        height: auto;
+        margin-top: 8px;
+    }
+    #logo p{
+        font-size: 35px;
+    }
+    #logo span{
+        color: rgb(155, 47, 47);
+        font-weight: bold;
+    }
+    .logotipo{
+        color: brown;
+    }
+    /* ___________________M E N U_______________________*/
+
+    #menu{
+        width: 600px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    #lista_menu{
+        display: table;
+        width: auto;
+        float: right;
+    }
+    #lista_menu li{
+        float: left;
+        margin-left: 50px;
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .link_menu{
+        color: white;
+        float: left;
+    }
+
+    .link_menu:hover{
+        text-decoration: underline;
+        color:rgb(187, 187, 187);
+    }
+        /* ADICIONAR O SELECT MENU MOBILE! pois o menu normal nao caberia */
+    #menu_mobile{
+        display: none;
+        width: 270px;
+        height: 50px;
+        border: rgba(103, 103, 103,1.00) thin solid;
+        border-radius: 5px;
+        background: rgba(62, 49, 40, 0.5);
+        color: white;
+        float: right;
+    }
+    /* ___________________B A R R A   L A T E R A L_______________________*/
+
+    #barra_lateral{
+    display: block;
+    width: 230px;
+    height: 380px;
+    margin: 20px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #barra_lateral h2{
+        margin-left: 22px;
+    }
+
+    .links_barra_lateral{
+        margin: 20px;
+        margin-bottom: 30px;
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .links_barra_lateral:hover{
+        text-shadow: 2px 2px 5px grey;
+    }
+
+
+    /* ___________________S U B R O D A P É_______________________*/
+    #subrodape2{
+        width: 100%;
+        background-color: rgb(39, 1, 1);
+        box-shadow: 5px 5px 5px rgb(24, 1, 1);
+    }
+
+    #subrodape{
+        width: 972px;
+        min-height: 160px;
+        padding: 10px;
+    }
+    .itens_subrodape{
+        width: 220px;
+        min-height: 200px;
+        float: left;
+        margin-left: 60px;
+        margin-right: 30px;
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .itens_subrodape h3{
+        margin-bottom: 0;
+        margin-top: auto;
+        font-weight: bold;
+        text-align: center;
+    }
+    .itens_subrodape hr{
+        border-color: rgb(187, 187, 187);
+    }
+    .links_contato{
+        color: rgb(187, 187, 187);
+    }
+    .links_contato:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ___________________R O D A P É_______________________*/
+    #rodape2{
+        width: 100%;
+        background-color: rgb(24, 1, 1);
+        box-shadow: 5px 5px 5px rgb(17, 1, 1);
+    }
+    #rodape{
+        width: 952px;
+        height: 10px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    #copy{
+        width: 50%;
+        height: 10px;
+    }
+    #desenvolvido{
+        width: 50%;
+        height: 10px;
+        text-align: right;
+        margin-top: auto;
+    }
+
+    /* ___________________I N D E X_______________________*/
+
+    #main_conteudos{
+        background-color: rgb(51, 9, 9);
+        min-height: 2195px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_conteudos h1{
+        margin-left: 45px;
+        font-size: auto;
+    }
+
+    #conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7{
+        width: 660px;
+        min-height: 240px;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #conteudo1 img, #conteudo2 img, #conteudo3 img, #conteudo4 img, #conteudo5 img, #conteudo6 img, #conteudo7 img{
+        width: 200px;
+        height: auto;
+        margin-top: auto;
+    }
+
+    #texto_index{
+        width: 440px;
+        min-height: 200px;
+    }
+    #texto_index span{
+        font-weight: bold;
+    }
+    .btcontinuar_lendo{
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 0, 21);
+        text-align: center;
+        float: right;
+        color: black;
+        font-weight: bold;
+        line-height: 35px;
+        border-radius: 7px;
+        box-shadow: 4px 4px 4px rgb(85, 9, 9);
+        margin-bottom: 0px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .btcontinuar_lendo:hover{
+        text-shadow: 1px 1px 1px rgb(112, 14, 14);
+        color: rgb(39, 1, 1);
+    }
+
+
+    /* ___________________C O N T O S_______________________*/
+
+    #main_conteudo_contos{
+        background-color: rgb(51, 9, 9);
+        min-height: auto;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+
+    #imagem_lateral{
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        margin-bottom: auto;
+    }
+    #imagem_lateral img{
+        width: auto;
+        height: auto;
+    }
+    .legenda_img{
+        color: grey;
+        font-size: 12px;
+        width: auto;
+    }
+
+    #conto{
+        width: 705px;
+        min-height: 500px;
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #conto h1{
+    font-style: italic;
+    }
+
+
+    /* ___________________S O B R E   M I M_______________________*/
+
+    #main_sobre_mim{
+        background-color: rgb(51, 9, 9);
+        min-height: 870px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_sobre_mim h1{
+        margin-left: 20px;
+        font-size: auto;
+    }
+    #sobre_mim{
+        width: 660px;
+        min-height: 700px;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #sobre_mim img{
+        width: auto;
+        height: auto;
+    }
+    #sobre_mim p{
+        margin: auto;
+    }
+    #texto_sobre_mim{
+        width: 370px;
+        height: 700px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 17px;
+        text-align:justify;
+    }
+    .margem_img{
+        margin-bottom: 20px;
+    }
+
+
+
+ } 
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* // X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px){
+
+    /* ___________________T O P O_______________________*/
+
+    #principal{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #topo{
+        width: 1200px;
+        height: 100px;
+    }
+    #logo{
+        width: 300px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    #logo img{
+        width: auto;
+        height: auto;
+        margin-top: 8px;
+    }
+    #logo p{
+        font-size: 35px;
+    }
+    #logo span{
+        color: rgb(155, 47, 47);
+        font-weight: bold;
+    }
+    .logotipo{
+        color: brown;
+    }
+    /* ___________________M E N U_______________________*/
+
+    #menu{
+        width: 800px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    #lista_menu{
+        display: table;
+        width: auto;
+        float: right;
+    }
+    #lista_menu li{
+        float: left;
+        margin-left: 50px;
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .link_menu{
+        color: white;
+        float: left;
+    }
+
+    .link_menu:hover{
+        text-decoration: underline;
+        color:rgb(187, 187, 187);
+    }
+        /* ADICIONAR O SELECT MENU MOBILE! pois o menu normal nao caberia */
+	#menumobile{
+		display: none;
+		width: 270px;
+		height: 50px;
+		border: rgba(103, 103, 103,1.00) thin solid;
+		border-radius: 5px;
+		background: rgba(62, 49, 40, 0.5);
+		color: white;
+        float: right;
+	}
+    /* ___________________B A R R A   L A T E R A L_______________________*/
+
+    #barra_lateral{
+    display: block;
+    width: 230px;
+    height: 380px;
+    margin: 40px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #barra_lateral h2{
+        margin-left: 22px;
+    }
+
+    .links_barra_lateral{
+        margin: 20px;
+        margin-bottom: 30px;
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .links_barra_lateral:hover{
+        text-shadow: 2px 2px 5px grey;
+    }
+
+
+    /* ___________________S U B R O D A P É_______________________*/
+    #subrodape2{
+        width: 100%;
+        background-color: rgb(39, 1, 1);
+        box-shadow: 5px 5px 5px rgb(24, 1, 1);
+    }
+    #subrodape{
+        width: 1180px;
+        min-height: 200px;
+        padding: 10px;
+    }
+    .itens_subrodape{
+        width: 280px;
+        min-height: 200px;
+        float: left;
+        margin-left: 65px;
+        margin-right: 30px;
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .itens_subrodape h3{
+        margin-bottom: 0;
+        margin-top: auto;
+        font-weight: bold;
+        text-align: center;
+    }
+    .itens_subrodape hr{
+        border-color: rgb(187, 187, 187);
+    }
+    .links_contato{
+        color: rgb(187, 187, 187);
+    }
+    .links_contato:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ___________________R O D A P É_______________________*/
+    #rodape2{
+        width: 100%;
+        background-color: rgb(24, 1, 1);
+        box-shadow: 5px 5px 5px rgb(17, 1, 1);
+    }
+    #rodape{
+        width: 1160px;
+        height: 10px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    #copy{
+        width: 50%;
+        height: 10px;
+    }
+    #desenvolvido{
+        width: 50%;
+        height: 10px;
+        text-align: right;
+        margin-top: auto;
+    }
+
+    /* ___________________I N D E X_______________________*/
+
+    #main_conteudos{
+        background-color: rgb(51, 9, 9);
+        min-height: 2420px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_conteudos h1{
+        margin-left: 45px;
+        font-size: 34px;
+    }
+
+    #conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7{
+        width: 810px;
+        min-height: 250px;
+        margin: 40px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #conteudo1 img, #conteudo2 img, #conteudo3 img, #conteudo4 img, #conteudo5 img, #conteudo6 img, #conteudo7 img{
+        width: auto;
+        height: auto;
+        margin-top: auto;
+    }
+
+    #texto_index{
+        width: 500px;
+        min-height: 200px;
+    }
+    #texto_index span{
+        font-weight: bold;
+    }
+    .btcontinuar_lendo{
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 0, 21);
+        text-align: center;
+        float: right;
+        color: black;
+        font-weight: bold;
+        line-height: 35px;
+        border-radius: 7px;
+        box-shadow: 4px 4px 4px rgb(85, 9, 9);
+        margin-bottom: 0px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .btcontinuar_lendo:hover{
+        text-shadow: 1px 1px 1px rgb(112, 14, 14);
+        color: rgb(39, 1, 1);
+    }
+
+
+    /* ___________________C O N T O S_______________________*/
+
+    #main_conteudo_contos{
+        background-color: rgb(51, 9, 9);
+        min-height: auto;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+
+    #imagem_lateral{
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        margin-bottom: auto;
+    }
+    #imagem_lateral img{
+        width: auto;
+        height: auto;
+    }
+    .legenda_img{
+        color: grey;
+        font-size: 12px;
+        width: auto;
+    }
+
+    #conto{
+        width: 870px;
+        min-height: 500px;
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #conto h1{
+    font-style: italic;
+    }
+
+
+    /* ___________________S O B R E   M I M_______________________*/
+
+    #main_sobre_mim{
+        background-color: rgb(51, 9, 9);
+        min-height: 870px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_sobre_mim h1{
+        margin-left: 40px;
+        font-size: 34px;
+    }
+    #sobre_mim{
+        width: 810px;
+        min-height: 700px;
+        margin: 40px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #sobre_mim img{
+        width: auto;
+        height: auto;
+    }
+    #sobre_mim p{
+        margin: auto;
+    }
+    #texto_sobre_mim{
+        width: 520px;
+        height: 700px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        text-align:justify;
+    }
+    .margem_img{
+        margin-bottom: 20px;
+    }
+}/* FIM 1200px */
+
+
+
+/* -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_- */
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px){
+    
+    /* ___________________T O P O_______________________*/
+
+    #principal{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #topo{
+        width: 1200px;
+        height: 100px;
+    }
+    #logo{
+        width: 300px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 30px;
+        font-size: 25px;
+    }
+    #logo img{
+        width: auto;
+        height: auto;
+        margin-top: 8px;
+    }
+    #logo p{
+        font-size: 35px;
+    }
+    #logo span{
+        color: rgb(155, 47, 47);
+        font-weight: bold;
+    }
+    .logotipo{
+        color: brown;
+    }
+    /* ___________________M E N U_______________________*/
+
+    #menu{
+        width: 800px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    #lista_menu{
+        display: table;
+        width: auto;
+        float: right;
+    }
+    #lista_menu li{
+        float: left;
+        margin-left: 50px;
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .link_menu{
+        color: white;
+        float: left;
+    }
+
+    .link_menu:hover{
+        text-decoration: underline;
+        color:rgb(187, 187, 187);
+    }
+        /* ADICIONAR O SELECT MENU MOBILE! pois o menu normal nao caberia */
+	#menu_mobile{
+        display: none;
+		width: 270px;
+		height: 50px;
+		border: rgba(103, 103, 103,1.00) thin solid;
+		border-radius: 5px;
+		background: rgba(62, 49, 40, 0.5);
+		color: white;
+        float: right;
+	}
+    /* ___________________B A R R A   L A T E R A L_______________________*/
+
+    #barra_lateral{
+    display: block;
+    width: 230px;
+    height: 380px;
+    margin: 40px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #barra_lateral h2{
+        margin-left: 22px;
+    }
+
+    .links_barra_lateral{
+        margin: 20px;
+        margin-bottom: 30px;
+        color: red;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .links_barra_lateral:hover{
+        text-shadow: 2px 2px 5px grey;
+    }
+
+
+    /* ___________________S U B R O D A P É_______________________*/
+    #subrodape2{
+        width: 100%;
+        background-color: rgb(39, 1, 1);
+        box-shadow: 5px 5px 5px rgb(24, 1, 1);
+    }
+    #subrodape{
+        width: 1180px;
+        min-height: 200px;
+        padding: 10px;
+    }
+    .itens_subrodape{
+        width: 280px;
+        min-height: 200px;
+        float: left;
+        margin-left: 65px;
+        margin-right: 30px;
+        color: rgb(187, 187, 187);
+        text-align: center;
+    }
+    .itens_subrodape h3{
+        margin-bottom: 0;
+        margin-top: auto;
+        font-weight: bold;
+        text-align: center;
+    }
+    .itens_subrodape hr{
+        border-color: rgb(187, 187, 187);
+    }
+    .links_contato{
+        color: rgb(187, 187, 187);
+    }
+    .links_contato:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    /* ___________________R O D A P É_______________________*/
+    #rodape2{
+        width: 100%;
+        background-color: rgb(24, 1, 1);
+        box-shadow: 5px 5px 5px rgb(17, 1, 1);
+    }
+    #rodape{
+        width: 1160px;
+        height: 10px;
+        padding: 20px;
+        line-height: 10px;
+    }
+    #copy{
+        width: 50%;
+        height: 10px;
+    }
+    #desenvolvido{
+        width: 50%;
+        height: 10px;
+        text-align: right;
+        margin-top: auto;
+    }
+
+    /* ___________________I N D E X_______________________*/
+
+    #main_conteudos{
+        background-color: rgb(51, 9, 9);
+        min-height: 2420px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_conteudos h1{
+        margin-left: 45px;
+        font-size: 34px;
+    }
+
+    #conteudo1, #conteudo2, #conteudo3, #conteudo4, #conteudo5, #conteudo6, #conteudo7{
+        width: 810px;
+        min-height: 250px;
+        margin: 40px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #conteudo1 img, #conteudo2 img, #conteudo3 img, #conteudo4 img, #conteudo5 img, #conteudo6 img, #conteudo7 img{
+        width: auto;
+        height: auto;
+        margin-top: auto;
+    }
+
+    #texto_index{
+        width: 500px;
+        min-height: 200px;
+    }
+    #texto_index span{
+        font-weight: bold;
+    }
+    .btcontinuar_lendo{
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background-color: rgb(255, 0, 21);
+        text-align: center;
+        float: right;
+        color: black;
+        font-weight: bold;
+        line-height: 35px;
+        border-radius: 7px;
+        box-shadow: 4px 4px 4px rgb(85, 9, 9);
+        margin-bottom: 0px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .btcontinuar_lendo:hover{
+        text-shadow: 1px 1px 1px rgb(112, 14, 14);
+        color: rgb(39, 1, 1);
+    }
+
+
+    /* ___________________C O N T O S_______________________*/
+
+    #main_conteudo_contos{
+        background-color: rgb(51, 9, 9);
+        min-height: auto;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+
+    #imagem_lateral{
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        margin-bottom: auto;
+    }
+    #imagem_lateral img{
+        width: auto;
+        height: auto;
+    }
+    .legenda_img{
+        color: grey;
+        font-size: 12px;
+        width: auto;
+    }
+
+    #conto{
+        width: 870px;
+        min-height: 500px;
+        margin-left: 20px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #conto h1{
+    font-style: italic;
+    }
+
+
+    /* ___________________S O B R E   M I M_______________________*/
+
+    #main_sobre_mim{
+        background-color: rgb(51, 9, 9);
+        min-height: 870px;
+        box-shadow: 5px 5px 5px rgb(20, 1, 1);
+    }
+    #main_sobre_mim h1{
+        margin-left: 40px;
+        font-size: 34px;
+    }
+    #sobre_mim{
+        width: 810px;
+        min-height: 700px;
+        margin: 40px;
+        padding: 20px;
+        background-color: rgb(19, 19, 19);
+        box-shadow: 5px 5px 5px rgb(39, 1, 1);
+    }
+    #sobre_mim img{
+        width: auto;
+        height: auto;
+    }
+    #sobre_mim p{
+        margin: auto;
+    }
+    #texto_sobre_mim{
+        width: 520px;
+        height: 700px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 20px;
+        text-align:justify;
+    }
+    .margem_img{
+        margin-bottom: 20px;
+    }
+
+}/* FIM 1400px */
